@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class ChangePlayerColor : MonoBehaviour
 {
-    public Material playerMaterial;//Nos permite cambiar el color del jugador.
-    Color defaultColor = Color.white;//Color original del jugador.
+    public Material playerMaterial;//Material del jugador
 
-    //Permite cambiar el color del jugador a rojo.
+    Color defaultColor = Color.white;//Color original del jugador
+
+    //Metodo para cambiar el color del jugador a rojo
     public void ChangeToRed()
     {
         playerMaterial.color = Color.red;
     }
 
-    //Permite cambiar el color del jugador a azul.
+    //Metodo para cambiar el color del jugador a azul
     public void ChangeToBlue()
     {
         playerMaterial.color = Color.blue;
     }
 
-    //Permite cambiar el color del jugador a amarillo.
+    //Metodo para cambiar el color del jugador a amarillo
     public void ChangeToYellow()
     {
         playerMaterial.color = Color.yellow;
@@ -27,7 +28,7 @@ public class ChangePlayerColor : MonoBehaviour
 
     void Start()
     {
-        //Permite establecer al color del jugador (blanco) como color predeterminado.
+        //Color predeterminado del jugador (Blanco)
         playerMaterial.color = defaultColor;
     }
 }

@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class VictorySceneController : MonoBehaviour
 {
-    //Escena del menu.
+    //Metodo para cargar la escena del menu principal
     public void LoadMenuScene()
     {
         SceneManager.LoadScene("MenuScene");
     }
 
-    //Escena del juego.
+    //Metodo para cargar la escena del juego
     public void LoadGameScene()
     {
         SceneManager.LoadScene("GameScene");

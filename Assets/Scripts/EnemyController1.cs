@@ -4,29 +4,29 @@ using UnityEngine;
 
 public class EnemyController1 : MonoBehaviour
 {
-    public float moveSpeed = 2f;//Velocidad  del enemigo 1.
-    public float leftLimit = -8.5f;//Limite izquierdo del enemigo 1.
-    public float rightLimit = 4.5f;//Limite derecho del enemigo 1.
-    private bool movingRight = true;//Indica si el enemigo se esta moviendo hacia la derecha.
+    public float moveSpeed = 3f;//Velocidad del enemigo 1
+    public float leftLimit = -12.5f;//Limite izquierdo del enemigo 1
+    public float rightLimit = 4.5f;//Limite derecho del enemigo 1
+    private bool movingRight = true;//Indica si el enemigo está moviéndose hacia la derecha
 
     void Update()
     {
-        //Si el enemigo se mueve hacia la derecha, lo desplaza hacia la derecha.
+        //Si el enemigo se mueve hacia la derecha, lo desplaza hacia la derecha
         if (movingRight)
         {
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
-        //Si el enemigo se mueve hacia la izquierda, lo desplaza hacia la izquierda.
+        //Si el enemigo se mueve hacia la izquierda, lo desplaza hacia la izquierda
         else
         {
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
-        //Si llega al límite derecho, cambia la dirección a la izquierda.
+        //Si el enemigo alcanza el limite derecho, cambia la direccion a la izquierda
         if (transform.position.x >= rightLimit)
         {
             movingRight = false;
         }
-        //Si llega al límite izquierdo, cambia la dirección a la derecha.
+        //Si el enemigo alcanza el limite izquierdo, cambia la direccion a la derecha
         else if (transform.position.x <= leftLimit)
         {
             movingRight = true;

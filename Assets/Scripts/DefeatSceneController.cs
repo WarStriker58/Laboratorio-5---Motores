@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class DefeatSceneController : MonoBehaviour
 {
-    //Escena del menu
+    //Metodo para llamar a la escena del menú.
     public void LoadMenuScene()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene("MenuScene"); //Llama a la escena "MenuScene"
     }
-    //Escena del juego
+
+    //Metodo para llamar a la escena del juego.
     public void LoadGameScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameScene");//Llama a la escena "GameScene"
     }
 }

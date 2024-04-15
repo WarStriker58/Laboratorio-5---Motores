@@ -12,20 +12,20 @@ public class MenuController : MonoBehaviour
 
     void Start()
     {
-        //Se añaden los listeners a los botones (permite detectar los clics).
+        //Se añaden los listeners a los botones para detectar los clics
         playButton.onClick.AddListener(PlayGame);
         exitButton.onClick.AddListener(ExitGame);
     }
 
-    //Escena del juego
+    //Metodo para llamar a la escena del juego.
     void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameScene");//Llama a la escena del juego.
     }
 
-    //Permite salir de la aplicación
+    //Metodo para salir del juego
     void ExitGame()
     {
-        Application.Quit();
+        Application.Quit();//Sale deL juego
     }
 }
